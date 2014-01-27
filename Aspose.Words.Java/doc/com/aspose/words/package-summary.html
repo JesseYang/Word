@@ -1,0 +1,1809 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>
+com.aspose.words (Aspose Words for Java)
+</TITLE>
+<META NAME="keywords" CONTENT="com.aspose.words package">
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../javaDoc.css" TITLE="Style">
+</HEAD>
+<BODY BGCOLOR="white" ><H2>
+Package com.aspose.words
+</H2>
+<summary><p>The <b>com.aspose.words</b> package provides 
+            classes for generating, converting and modifying Microsoft Word documents 
+            without utilizing Microsoft Word.</p><p>Aspose.Words is written completely in Java. Microsoft Word is not required in order to use Aspose.Words.</p><p>The classes in the <b>com.aspose.words</b> package
+            borrow best practices from two well-known frameworks: Microsoft Word Automation and System.Xml. 
+            A document in Aspose.Words is represented by a tree of nodes, much like in XML DOM. 
+            Where possible, class, method and property names match those found in Microsoft Word Automation. </p><p>The main classes in this namespace are:</p><ul><li><b>Document</b> is the main class of the object 
+            model that represents a Microsoft Word document.</li><li><b>DocumentBuilder</b> provides an
+            easy way to insert content and formatting into a document.</li><li><b>Node</b> is the base class for all nodes
+            in the document.</li><li><b>CompositeNode</b> is the base class 
+            for all nodes of the document that can contain other nodes, for example
+            <b>Paragraph</b>,
+            <b>Section</b> and
+            <b>Table</b>.</li></ul><p>The <b>com.aspose.words</b> package also contains classes that form
+            the reporting engine of Aspose.Words. The reporting engine allows to quickly 
+            and easily populate documents designed in Microsoft Word with data from 
+            various data sources such as <b>java.sql.ResultSet</b>, <b>array of ResultSets</b>, 
+            <b>com.aspose.words.DataSet</b> or an <b>array of values</b>.</p><p>The <b>MailMerge</b> object which provides access to the reporting functionality 
+            is available via the <b>Document.MailMerge</b> property.</p></summary><P><TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Class Summary</B></FONT></TH>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="AbsolutePositionTab.html" title="class in com.aspose.words">AbsolutePositionTab</A></B></TD>
+<TD>
+            An absolute position tab is a character which is used to advance the position on 
+            the current line of text when displaying this WordprocessingML content.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="AsposeWordsPrintDocument.html" title="class in com.aspose.words">AsposeWordsPrintDocument</A></B></TD>
+<TD>
+             Provides a default implementation for printing of a <cref><A HREF="Document.html" title="class in com.aspose.words">Document</A></cref> within
+             the Java printing framework.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="Body.html" title="class in com.aspose.words">Body</A></B></TD>
+<TD>
+            Represents a container for the main text of a section.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="Bookmark.html" title="class in com.aspose.words">Bookmark</A></B></TD>
+<TD>
+            Represents a single bookmark.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="BookmarkCollection.html" title="class in com.aspose.words">BookmarkCollection</A></B></TD>
+<TD>
+            A collection of <cref><A HREF="Bookmark.html" title="class in com.aspose.words">Bookmark</A></cref> objects that represent the bookmarks in the specified range.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="BookmarkEnd.html" title="class in com.aspose.words">BookmarkEnd</A></B></TD>
+<TD>
+             Represents an end of a bookmark in a Word document.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="BookmarksOutlineLevelCollection.html" title="class in com.aspose.words">BookmarksOutlineLevelCollection</A></B></TD>
+<TD>
+            A collection of individual bookmarks outline level.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="BookmarkStart.html" title="class in com.aspose.words">BookmarkStart</A></B></TD>
+<TD>
+             Represents a start of a bookmark in a Word document.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="Border.html" title="class in com.aspose.words">Border</A></B></TD>
+<TD>
+            Represents a border of an object.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="BorderCollection.html" title="class in com.aspose.words">BorderCollection</A></B></TD>
+<TD>
+            A collection of Border objects.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="BuildingBlock.html" title="class in com.aspose.words">BuildingBlock</A></B></TD>
+<TD>
+            Represents a glossary document entry such as a Building Block, AutoText or an AutoCorrect entry.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="BuildingBlockCollection.html" title="class in com.aspose.words">BuildingBlockCollection</A></B></TD>
+<TD>
+            A collection of <cref><A HREF="BuildingBlock.html" title="class in com.aspose.words">BuildingBlock</A></cref> objects in the document.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="BuildVersionInfo.html" title="class in com.aspose.words">BuildVersionInfo</A></B></TD>
+<TD>
+            Provides information about the current product name and version.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="BuiltInDocumentProperties.html" title="class in com.aspose.words">BuiltInDocumentProperties</A></B></TD>
+<TD>
+             A collection of built-in document properties.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="Cell.html" title="class in com.aspose.words">Cell</A></B></TD>
+<TD>
+            Represents a table cell.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="CellCollection.html" title="class in com.aspose.words">CellCollection</A></B></TD>
+<TD>
+            Provides typed access to a collection of <cref><A HREF="Cell.html" title="class in com.aspose.words">Cell</A></cref> nodes.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="CellFormat.html" title="class in com.aspose.words">CellFormat</A></B></TD>
+<TD>
+            Represents all formatting for a table cell.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="Comment.html" title="class in com.aspose.words">Comment</A></B></TD>
+<TD>
+             Represents a container for text of a comment.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="CommentRangeEnd.html" title="class in com.aspose.words">CommentRangeEnd</A></B></TD>
+<TD>
+            Denotes the end of a region of text that has a comment associated with it.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="CommentRangeStart.html" title="class in com.aspose.words">CommentRangeStart</A></B></TD>
+<TD>
+            Denotes the start of a region of text that has a comment associated with it.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="CompatibilityOptions.html" title="class in com.aspose.words">CompatibilityOptions</A></B></TD>
+<TD>
+            Contains compatibility options (that is, the user preferences entered on the <b>Compatibility</b>
+            tab of the <b>Options</b> dialog in Microsoft Word).
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="CompositeNode.html" title="class in com.aspose.words">CompositeNode</A></B></TD>
+<TD>
+             Base class for nodes that can contain other nodes.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ConvertUtil.html" title="class in com.aspose.words">ConvertUtil</A></B></TD>
+<TD>
+            Provides helper functions to convert between various measurement units.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="CssSavingArgs.html" title="class in com.aspose.words">CssSavingArgs</A></B></TD>
+<TD>
+            Provides data for the <cref><A HREF="ICssSavingCallback.html#cssSaving(com.aspose.words.CssSavingArgs)" title="method in class com.aspose.words.ICssSavingCallback">ICssSavingCallback.cssSaving(com.aspose.words.CssSavingArgs)</A></cref> event.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="CustomDocumentProperties.html" title="class in com.aspose.words">CustomDocumentProperties</A></B></TD>
+<TD>
+             A collection of custom document properties.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="CustomPart.html" title="class in com.aspose.words">CustomPart</A></B></TD>
+<TD>
+            Represents a custom (arbitrary content) part, that is not defined by the ISO/IEC 29500 standard.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="CustomPartCollection.html" title="class in com.aspose.words">CustomPartCollection</A></B></TD>
+<TD>
+            Represents a collection of <cref><A HREF="CustomPart.html" title="class in com.aspose.words">CustomPart</A></cref> objects.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="CustomXmlMarkup.html" title="class in com.aspose.words">CustomXmlMarkup</A></B></TD>
+<TD>
+            This element specifies the presence of Custom XML markup around 
+            inline structures (runs, images, fields, etc.), paragraphs, tables, rows and cells.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="CustomXmlPart.html" title="class in com.aspose.words">CustomXmlPart</A></B></TD>
+<TD>
+            Represents a Custom XML Data Storage Part (custom XML data within a package).
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="CustomXmlPartCollection.html" title="class in com.aspose.words">CustomXmlPartCollection</A></B></TD>
+<TD>
+            Represents a collection of Custom XML Parts. The items are <cref><A HREF="CustomXmlPart.html" title="class in com.aspose.words">CustomXmlPart</A></cref> objects.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="CustomXmlProperty.html" title="class in com.aspose.words">CustomXmlProperty</A></B></TD>
+<TD>
+            Represents a single custom XML attribute or a smart tag property.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="CustomXmlPropertyCollection.html" title="class in com.aspose.words">CustomXmlPropertyCollection</A></B></TD>
+<TD>
+            Represents a collection of custom XML attributes or smart tag properties.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="CustomXmlSchemaCollection.html" title="class in com.aspose.words">CustomXmlSchemaCollection</A></B></TD>
+<TD>
+            A collection of strings that represent XML schemas that are associated with a custom XML part.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="DataRelation.html" title="class in com.aspose.words">DataRelation</A></B></TD>
+<TD>
+             Represents a parent-child relationship between two data tables in a data set.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="DataRelationCollection.html" title="class in com.aspose.words">DataRelationCollection</A></B></TD>
+<TD>
+             A collection of <cref><A HREF="DataRelation.html" title="class in com.aspose.words">DataRelation</A></cref> objects.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="DataSet.html" title="class in com.aspose.words">DataSet</A></B></TD>
+<TD>
+             This class is a container for a set of data tables and relations between them.
+             You normally use this class as a data source for a mail merge with nested regions.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="DataTable.html" title="class in com.aspose.words">DataTable</A></B></TD>
+<TD>
+             Wraps a ResultSet object and associates it with a table name and a data set object if this table
+             belongs to a data set. You normally use this class as a data source for a specific mail merge region.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="DataTableCollection.html" title="class in com.aspose.words">DataTableCollection</A></B></TD>
+<TD>
+             A collection of <cref><A HREF="DataTable.html" title="class in com.aspose.words">DataTable</A></cref> objects.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="DigitalSignature.html" title="class in com.aspose.words">DigitalSignature</A></B></TD>
+<TD>
+            Represents a digital signature on a document and the result of its verification.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="DigitalSignatureCollection.html" title="class in com.aspose.words">DigitalSignatureCollection</A></B></TD>
+<TD>
+            Provides a read-only collection of digital signatures attached to a document.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="DigitalSignatureUtil.html" title="class in com.aspose.words">DigitalSignatureUtil</A></B></TD>
+<TD>
+            Provides methods for signing document.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="DocSaveOptions.html" title="class in com.aspose.words">DocSaveOptions</A></B></TD>
+<TD>
+            Can be used to specify additional options when saving a document into the <cref><A HREF="SaveFormat.html#DOC" title="field in class com.aspose.words.SaveFormat">SaveFormat.DOC</A></cref> or
+            <cref><A HREF="SaveFormat.html#DOT" title="field in class com.aspose.words.SaveFormat">SaveFormat.DOT</A></cref> format.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="Document.html" title="class in com.aspose.words">Document</A></B></TD>
+<TD>
+            Represents a Word document.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="DocumentBase.html" title="class in com.aspose.words">DocumentBase</A></B></TD>
+<TD>
+            Provides the abstract base class for a main document and a glossary document of a Word document.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="DocumentBuilder.html" title="class in com.aspose.words">DocumentBuilder</A></B></TD>
+<TD>
+             Provides methods to insert text, images and other content, specify font, paragraph and section formatting.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="DocumentPartSavingArgs.html" title="class in com.aspose.words">DocumentPartSavingArgs</A></B></TD>
+<TD>
+            Provides data for the <cref><A HREF="IDocumentPartSavingCallback.html#documentPartSaving(com.aspose.words.DocumentPartSavingArgs)" title="method in class com.aspose.words.IDocumentPartSavingCallback">IDocumentPartSavingCallback.documentPartSaving(com.aspose.words.DocumentPartSavingArgs)</A></cref> callback.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="DocumentProperty.html" title="class in com.aspose.words">DocumentProperty</A></B></TD>
+<TD>
+            Represents a custom or built-in document property.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="DocumentPropertyCollection.html" title="class in com.aspose.words">DocumentPropertyCollection</A></B></TD>
+<TD>
+             Base class for <cref><A HREF="BuiltInDocumentProperties.html" title="class in com.aspose.words">BuiltInDocumentProperties</A></cref> and <cref><A HREF="CustomDocumentProperties.html" title="class in com.aspose.words">CustomDocumentProperties</A></cref> collections.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="DocumentVisitor.html" title="class in com.aspose.words">DocumentVisitor</A></B></TD>
+<TD>
+            Base class for custom document visitors.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="DrawingML.html" title="class in com.aspose.words">DrawingML</A></B></TD>
+<TD>
+            Represents a DrawingML shape, picture, chart or diagram in a document.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="DrawingMLImageData.html" title="class in com.aspose.words">DrawingMLImageData</A></B></TD>
+<TD>
+            Defines an image for a DrawingML picture.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="DropDownItemCollection.html" title="class in com.aspose.words">DropDownItemCollection</A></B></TD>
+<TD>
+            A collection of strings that represent all the items in a drop-down form field.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="EditableRange.html" title="class in com.aspose.words">EditableRange</A></B></TD>
+<TD>
+            Represents a single editable range.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="EditableRangeEnd.html" title="class in com.aspose.words">EditableRangeEnd</A></B></TD>
+<TD>
+             Represents an end of an editable range in a Word document.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="EditableRangeStart.html" title="class in com.aspose.words">EditableRangeStart</A></B></TD>
+<TD>
+             Represents a start of an editable range in a Word document.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="Field.html" title="class in com.aspose.words">Field</A></B></TD>
+<TD>
+            Represents a Microsoft Word document field.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="FieldChar.html" title="class in com.aspose.words">FieldChar</A></B></TD>
+<TD>
+            Base class for nodes that represent field characters in a document.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="FieldCollection.html" title="class in com.aspose.words">FieldCollection</A></B></TD>
+<TD>
+            A collection of <cref><A HREF="Field.html" title="class in com.aspose.words">Field</A></cref> objects that represents the fields in the specified range.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="FieldEnd.html" title="class in com.aspose.words">FieldEnd</A></B></TD>
+<TD>
+            Represents an end of a Word field in a document.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="FieldMergingArgs.html" title="class in com.aspose.words">FieldMergingArgs</A></B></TD>
+<TD>
+             Provides data for the <b>MergeField</b> event.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="FieldMergingArgsBase.html" title="class in com.aspose.words">FieldMergingArgsBase</A></B></TD>
+<TD>
+             Base class for <cref><A HREF="FieldMergingArgs.html" title="class in com.aspose.words">FieldMergingArgs</A></cref> and <cref><A HREF="ImageFieldMergingArgs.html" title="class in com.aspose.words">ImageFieldMergingArgs</A></cref>.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="FieldOptions.html" title="class in com.aspose.words">FieldOptions</A></B></TD>
+<TD>
+            Represents options to control field handling in a document.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="FieldSeparator.html" title="class in com.aspose.words">FieldSeparator</A></B></TD>
+<TD>
+            Represents a Word field separator that separates the field code from the field result.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="FieldStart.html" title="class in com.aspose.words">FieldStart</A></B></TD>
+<TD>
+            Represents a start of a Word field in a document.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="FileFontSource.html" title="class in com.aspose.words">FileFontSource</A></B></TD>
+<TD>
+            Represents the single TrueType font file stored in the file system.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="FileFormatInfo.html" title="class in com.aspose.words">FileFormatInfo</A></B></TD>
+<TD>
+            Contains data returned by <cref><A HREF="FileFormatUtil.html" title="class in com.aspose.words">FileFormatUtil</A></cref> document format detection methods.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="FileFormatUtil.html" title="class in com.aspose.words">FileFormatUtil</A></B></TD>
+<TD>
+            Provides utility methods for working with file formats, such as detecting file format 
+            or converting file extensions to/from file format enums.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="Fill.html" title="class in com.aspose.words">Fill</A></B></TD>
+<TD>
+            Defines a fill for a shape.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="FolderFontSource.html" title="class in com.aspose.words">FolderFontSource</A></B></TD>
+<TD>
+            Represents the folder that contains TrueType font files.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="Font.html" title="class in com.aspose.words">Font</A></B></TD>
+<TD>
+            Contains font attributes (font name, font size, color, and so on) for an object.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="FontInfo.html" title="class in com.aspose.words">FontInfo</A></B></TD>
+<TD>
+            Specifies information about a font used in the document.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="FontInfoCollection.html" title="class in com.aspose.words">FontInfoCollection</A></B></TD>
+<TD>
+            Represents a collection of fonts used in a document.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="FontSavingArgs.html" title="class in com.aspose.words">FontSavingArgs</A></B></TD>
+<TD>
+            Provides data for the <cref><A HREF="IFontSavingCallback.html#fontSaving(com.aspose.words.FontSavingArgs)" title="method in class com.aspose.words.IFontSavingCallback">IFontSavingCallback.fontSaving(com.aspose.words.FontSavingArgs)</A></cref> event.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="FontSettings.html" title="class in com.aspose.words">FontSettings</A></B></TD>
+<TD>
+            This class provides static methods that allow to specify the location of TrueType fonts
+            that Aspose.Words will use when rendering documents to PDF, XPS, printing, imaging or 
+            embedding fonts into EPUB and other document formats that support embedded fonts.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="FontSourceBase.html" title="class in com.aspose.words">FontSourceBase</A></B></TD>
+<TD>
+            This is an abstract base class for the classes that allow the user to specify various font sources.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="Footnote.html" title="class in com.aspose.words">Footnote</A></B></TD>
+<TD>
+             Represents a container for text of a footnote or endnote.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="FootnoteOptions.html" title="class in com.aspose.words">FootnoteOptions</A></B></TD>
+<TD>
+            Represents the footnote or endnote numbering options for a document or section.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="FormField.html" title="class in com.aspose.words">FormField</A></B></TD>
+<TD>
+             Represents a single form field.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="FormFieldCollection.html" title="class in com.aspose.words">FormFieldCollection</A></B></TD>
+<TD>
+            A collection of <b>FormField</b> objects that represent all the form fields in a range.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="GlossaryDocument.html" title="class in com.aspose.words">GlossaryDocument</A></B></TD>
+<TD>
+            Represents the root element for a glossary document within a Word document.
+            A glossary document is a storage for AutoText, AutoCorrect entries and Building Blocks.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="GroupShape.html" title="class in com.aspose.words">GroupShape</A></B></TD>
+<TD>
+            Represents a group of shapes in a document.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="HeaderFooter.html" title="class in com.aspose.words">HeaderFooter</A></B></TD>
+<TD>
+             Represents a container for the header or footer text of a section.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="HeaderFooterCollection.html" title="class in com.aspose.words">HeaderFooterCollection</A></B></TD>
+<TD>
+            Provides typed access to <cref><A HREF="HeaderFooter.html" title="class in com.aspose.words">HeaderFooter</A></cref> nodes of a <b>Section</b>.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="HtmlFixedSaveOptions.html" title="class in com.aspose.words">HtmlFixedSaveOptions</A></B></TD>
+<TD>
+            Can be used to specify additional options when saving a document into the <cref><A HREF="SaveFormat.html#HTML_FIXED" title="field in class com.aspose.words.SaveFormat">SaveFormat.HTML_FIXED</A></cref> format.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="HtmlSaveOptions.html" title="class in com.aspose.words">HtmlSaveOptions</A></B></TD>
+<TD>
+            Can be used to specify additional options when saving a document into the <cref><A HREF="SaveFormat.html#HTML" title="field in class com.aspose.words.SaveFormat">SaveFormat.HTML</A></cref>,
+            <cref><A HREF="SaveFormat.html#MHTML" title="field in class com.aspose.words.SaveFormat">SaveFormat.MHTML</A></cref> or <cref><A HREF="SaveFormat.html#EPUB" title="field in class com.aspose.words.SaveFormat">SaveFormat.EPUB</A></cref> format.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ImageData.html" title="class in com.aspose.words">ImageData</A></B></TD>
+<TD>
+            Defines an image for a VML-based shape. 
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ImageFieldMergingArgs.html" title="class in com.aspose.words">ImageFieldMergingArgs</A></B></TD>
+<TD>
+             Provides data for the <cref><A HREF="IFieldMergingCallback.html#imageFieldMerging(com.aspose.words.ImageFieldMergingArgs)" title="method in class com.aspose.words.IFieldMergingCallback">IFieldMergingCallback.imageFieldMerging(com.aspose.words.ImageFieldMergingArgs)</A></cref> event.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ImageSaveOptions.html" title="class in com.aspose.words">ImageSaveOptions</A></B></TD>
+<TD>
+            Allows to specify additional options when rendering document pages or shapes to images.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ImageSavingArgs.html" title="class in com.aspose.words">ImageSavingArgs</A></B></TD>
+<TD>
+            Provides data for the <cref><A HREF="IImageSavingCallback.html#imageSaving(com.aspose.words.ImageSavingArgs)" title="method in class com.aspose.words.IImageSavingCallback">IImageSavingCallback.imageSaving(com.aspose.words.ImageSavingArgs)</A></cref> event.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ImageSize.html" title="class in com.aspose.words">ImageSize</A></B></TD>
+<TD>
+            Contains information about image size and resolution.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="Inline.html" title="class in com.aspose.words">Inline</A></B></TD>
+<TD>
+            Base class for inline-level nodes that can have character formatting associated with them, but cannot have child nodes of their own.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="InlineStory.html" title="class in com.aspose.words">InlineStory</A></B></TD>
+<TD>
+             Base class for inline-level nodes that can contain paragraphs and tables.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="LayoutCollector.html" title="class in com.aspose.words">LayoutCollector</A></B></TD>
+<TD><p>This class collects mapping of document nodes to layout objects and computes page numbers of nodes.</p><p>When you create a <cref><i>LayoutCollector</i></cref> and specify a <cref><A HREF="Document.html" title="class in com.aspose.words">Document</A></cref> document object to attach to, 
+            the collector will record mapping of document nodes to layout objects when the document is formatted into pages.</p><p>You will be able to find out on which page a particular document node (e.g. run, paragraph or table cell) is located
+            by using the <cref><A HREF="#getStartPageIndex(com.aspose.words.Node)" title="method in class com.aspose.words.LayoutCollector">getStartPageIndex(com.aspose.words.Node)</A></cref>, <cref><A HREF="#getEndPageIndex(com.aspose.words.Node)" title="method in class com.aspose.words.LayoutCollector">getEndPageIndex(com.aspose.words.Node)</A></cref> and <cref><A HREF="#getNumPagesSpanned(com.aspose.words.Node)" title="method in class com.aspose.words.LayoutCollector">getNumPagesSpanned(com.aspose.words.Node)</A></cref> methods. 
+            These methods automatically build page layout model of the document and update fields if required.</p><p>When you no longer need to collect layout information, it is best to set the <cref><A HREF="#Document" title="property in class com.aspose.words.LayoutCollector">Document</A></cref> property to null
+            to avoid unnecessary collection of more layout mappings.</p></TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="LayoutEnumerator.html" title="class in com.aspose.words">LayoutEnumerator</A></B></TD>
+<TD>
+            Enumerates page layout entities of a document.
+            
+            You can use this class to walk over the page layout model. Available properties are type, geometry, text and page index where entity is rendered,
+            as well as overall structure and relationships. Use <cref><A HREF="#moveNode(com.aspose.words.Node)" title="method in class com.aspose.words.LayoutEnumerator">moveNode(com.aspose.words.Node)</A></cref> method to locate the entity which corresponds to a document node.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="LayoutOptions.html" title="class in com.aspose.words">LayoutOptions</A></B></TD>
+<TD>
+            Collection of settings that affect how a document is laid out and rendered.
+            Note not all options affect layout. Some affect conversion of layout to APS only.
+            TODO It would be nice to split this class to separate layout options and layout-to-APS options.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="License.html" title="class in com.aspose.words">License</A></B></TD>
+<TD>
+            Provides methods to license the component.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="List.html" title="class in com.aspose.words">List</A></B></TD>
+<TD>
+             Represents formatting of a list.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ListCollection.html" title="class in com.aspose.words">ListCollection</A></B></TD>
+<TD>
+             Stores and manages formatting of bulleted and numbered lists used in a document.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ListFormat.html" title="class in com.aspose.words">ListFormat</A></B></TD>
+<TD>
+             Allows to control what list formatting is applied to a paragraph.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ListLabel.html" title="class in com.aspose.words">ListLabel</A></B></TD>
+<TD>
+            Defines properties specific to a list label. 
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ListLevel.html" title="class in com.aspose.words">ListLevel</A></B></TD>
+<TD>
+             Defines formatting for a list level.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ListLevelCollection.html" title="class in com.aspose.words">ListLevelCollection</A></B></TD>
+<TD>
+            A collection of list formatting for each level in a list.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="LoadOptions.html" title="class in com.aspose.words">LoadOptions</A></B></TD>
+<TD>
+            Allows to specify additional options (such as password or base URI) when loading a document into a <cref><A HREF="Document.html" title="class in com.aspose.words">Document</A></cref> object.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="MailMerge.html" title="class in com.aspose.words">MailMerge</A></B></TD>
+<TD>
+             Represents the mail merge functionality.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="MailMergeSettings.html" title="class in com.aspose.words">MailMergeSettings</A></B></TD>
+<TD>
+            Specifies all of the mail merge information for a document.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="MappedDataFieldCollection.html" title="class in com.aspose.words">MappedDataFieldCollection</A></B></TD>
+<TD>
+             Allows to automatically map between names of fields in your data source
+             and names of mail merge fields in the document.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="MemoryFontSource.html" title="class in com.aspose.words">MemoryFontSource</A></B></TD>
+<TD>
+            Represents the single TrueType font file stored in memory.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="MergeFieldImageDimension.html" title="class in com.aspose.words">MergeFieldImageDimension</A></B></TD>
+<TD>
+            Represents an image dimension (i.e. the width or the height) used across a mail merge process.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="MetafileRenderingOptions.html" title="class in com.aspose.words">MetafileRenderingOptions</A></B></TD>
+<TD>
+            Allows to specify additional metafile rendering options.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="Node.html" title="class in com.aspose.words">Node</A></B></TD>
+<TD>
+            Base class for all nodes of a Word document.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="NodeChangingArgs.html" title="class in com.aspose.words">NodeChangingArgs</A></B></TD>
+<TD>
+             Provides data for methods of the <cref><A HREF="INodeChangingCallback.html" title="interface in com.aspose.words">INodeChangingCallback</A></cref> interface.
+            
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="NodeCollection.html" title="class in com.aspose.words">NodeCollection</A></B></TD>
+<TD>
+             Represents a collection of nodes of a specific type.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="NodeImporter.html" title="class in com.aspose.words">NodeImporter</A></B></TD>
+<TD>
+             Allows to efficiently perform repeated import of nodes from one document to another.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="NodeList.html" title="class in com.aspose.words">NodeList</A></B></TD>
+<TD>
+            Represents a collection of nodes matching an XPath query executed using the <cref><A HREF="CompositeNode.html#selectNodes(java.lang.String)" title="method in class com.aspose.words.CompositeNode">CompositeNode.selectNodes(java.lang.String)</A></cref> method.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="Odso.html" title="class in com.aspose.words">Odso</A></B></TD>
+<TD>
+            Specifies the Office Data Source Object (ODSO) settings for a mail merge data source.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="OdsoFieldMapData.html" title="class in com.aspose.words">OdsoFieldMapData</A></B></TD>
+<TD>
+            Specifies how a column in the external data source shall be mapped to the predefined merge fields within the document.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="OdsoFieldMapDataCollection.html" title="class in com.aspose.words">OdsoFieldMapDataCollection</A></B></TD>
+<TD>
+            A typed collection of the <cref><A HREF="OdsoFieldMapData.html" title="class in com.aspose.words">OdsoFieldMapData</A></cref> objects.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="OdsoRecipientData.html" title="class in com.aspose.words">OdsoRecipientData</A></B></TD>
+<TD>
+            Represents information about a single record within an external data source that is to be excluded from the mail merge.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="OdsoRecipientDataCollection.html" title="class in com.aspose.words">OdsoRecipientDataCollection</A></B></TD>
+<TD>
+            A typed collection of <cref><A HREF="OdsoRecipientData.html" title="class in com.aspose.words">OdsoRecipientData</A></cref></TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="OdtSaveOptions.html" title="class in com.aspose.words">OdtSaveOptions</A></B></TD>
+<TD>
+            Can be used to specify additional options when saving a document into the <cref><A HREF="SaveFormat.html#ODT" title="field in class com.aspose.words.SaveFormat">SaveFormat.ODT</A></cref> or
+            <cref><A HREF="SaveFormat.html#OTT" title="field in class com.aspose.words.SaveFormat">SaveFormat.OTT</A></cref> format.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="OfficeMath.html" title="class in com.aspose.words">OfficeMath</A></B></TD>
+<TD>
+            Represents an Office Math object such as function, equation, matrix or alike. Can contain child elements
+            including runs of mathematical text, bookmarks, comments, other <cref><i>OfficeMath</i></cref> instances and some other nodes.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="OleFormat.html" title="class in com.aspose.words">OleFormat</A></B></TD>
+<TD>
+            Provides access to the data of an OLE object or ActiveX control.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="OoxmlSaveOptions.html" title="class in com.aspose.words">OoxmlSaveOptions</A></B></TD>
+<TD>
+            Can be used to specify additional options when saving a document into the <cref><A HREF="SaveFormat.html#DOCX" title="field in class com.aspose.words.SaveFormat">SaveFormat.DOCX</A></cref>,
+            <cref><A HREF="SaveFormat.html#DOCM" title="field in class com.aspose.words.SaveFormat">SaveFormat.DOCM</A></cref>, <cref><A HREF="SaveFormat.html#DOTX" title="field in class com.aspose.words.SaveFormat">SaveFormat.DOTX</A></cref>, <cref><A HREF="SaveFormat.html#DOTM" title="field in class com.aspose.words.SaveFormat">SaveFormat.DOTM</A></cref> or
+            <cref><A HREF="SaveFormat.html#FLAT_OPC" title="field in class com.aspose.words.SaveFormat">SaveFormat.FLAT_OPC</A></cref> format.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="OutlineOptions.html" title="class in com.aspose.words">OutlineOptions</A></B></TD>
+<TD>
+            Allows to specify outline options.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="PageInfo.html" title="class in com.aspose.words">PageInfo</A></B></TD>
+<TD>
+            Represents information about a particular document page.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="PageSetup.html" title="class in com.aspose.words">PageSetup</A></B></TD>
+<TD>
+            Represents the page setup properties of a section.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="Paragraph.html" title="class in com.aspose.words">Paragraph</A></B></TD>
+<TD>
+             Represents a paragraph of text.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ParagraphCollection.html" title="class in com.aspose.words">ParagraphCollection</A></B></TD>
+<TD>
+            Provides typed access to a collection of <cref><A HREF="Paragraph.html" title="class in com.aspose.words">Paragraph</A></cref> nodes.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ParagraphFormat.html" title="class in com.aspose.words">ParagraphFormat</A></B></TD>
+<TD>
+            Represents all the formatting for a paragraph.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="PdfDigitalSignatureDetails.html" title="class in com.aspose.words">PdfDigitalSignatureDetails</A></B></TD>
+<TD>
+            Contains details for signing a PDF document with a digital signature.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="PdfEncryptionDetails.html" title="class in com.aspose.words">PdfEncryptionDetails</A></B></TD>
+<TD>
+            Contains details for encrypting and access permissions for a PDF document.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="PdfSaveOptions.html" title="class in com.aspose.words">PdfSaveOptions</A></B></TD>
+<TD>
+            Can be used to specify additional options when saving a document into the <cref><A HREF="SaveFormat.html#PDF" title="field in class com.aspose.words.SaveFormat">SaveFormat.PDF</A></cref> format.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="PreferredWidth.html" title="class in com.aspose.words">PreferredWidth</A></B></TD>
+<TD>
+            Represents a value and its unit of measure that is used to specify the preferred width of a table or a cell.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="PsSaveOptions.html" title="class in com.aspose.words">PsSaveOptions</A></B></TD>
+<TD>
+            Can be used to specify additional options when saving a document into the <cref><A HREF="SaveFormat.html#PS" title="field in class com.aspose.words.SaveFormat">SaveFormat.PS</A></cref> format.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="Range.html" title="class in com.aspose.words">Range</A></B></TD>
+<TD>
+             Represents a contiguous area in a document.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ReplacingArgs.html" title="class in com.aspose.words">ReplacingArgs</A></B></TD>
+<TD>
+            Provides data for a custom replace operation.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ResourceLoadingArgs.html" title="class in com.aspose.words">ResourceLoadingArgs</A></B></TD>
+<TD>
+            Provides data for the <cref><A HREF="IResourceLoadingCallback.html#resourceLoading(com.aspose.words.ResourceLoadingArgs)" title="method in class com.aspose.words.IResourceLoadingCallback">IResourceLoadingCallback.resourceLoading(com.aspose.words.ResourceLoadingArgs)</A></cref> method.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ResourceSavingArgs.html" title="class in com.aspose.words">ResourceSavingArgs</A></B></TD>
+<TD>
+            Provides data for the <cref><A HREF="IResourceSavingCallback.html#resourceSaving(com.aspose.words.ResourceSavingArgs)" title="method in class com.aspose.words.IResourceSavingCallback">IResourceSavingCallback.resourceSaving(com.aspose.words.ResourceSavingArgs)</A></cref> event.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="Revision.html" title="class in com.aspose.words">Revision</A></B></TD>
+<TD>
+            Represents a revision (tracked change) in a document node or style. 
+            Use <cref><A HREF="#RevisionType" title="property in class com.aspose.words.Revision">RevisionType</A></cref> to check the type of this revision. 
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="RevisionCollection.html" title="class in com.aspose.words">RevisionCollection</A></B></TD>
+<TD>
+            A collection of <cref><A HREF="Revision.html" title="class in com.aspose.words">Revision</A></cref> objects that represent revisions in the document.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="Row.html" title="class in com.aspose.words">Row</A></B></TD>
+<TD>
+            Represents a table row.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="RowCollection.html" title="class in com.aspose.words">RowCollection</A></B></TD>
+<TD>
+            Provides typed access to a collection of <cref><A HREF="Row.html" title="class in com.aspose.words">Row</A></cref> nodes.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="RowFormat.html" title="class in com.aspose.words">RowFormat</A></B></TD>
+<TD>
+            Represents all formatting for a table row.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="RtfSaveOptions.html" title="class in com.aspose.words">RtfSaveOptions</A></B></TD>
+<TD>
+            Can be used to specify additional options when saving a document into the <cref><A HREF="SaveFormat.html#RTF" title="field in class com.aspose.words.SaveFormat">SaveFormat.RTF</A></cref> format.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="Run.html" title="class in com.aspose.words">Run</A></B></TD>
+<TD>
+            Represents a run of characters with the same font formatting.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="RunCollection.html" title="class in com.aspose.words">RunCollection</A></B></TD>
+<TD>
+            Provides typed access to a collection of <cref><A HREF="Run.html" title="class in com.aspose.words">Run</A></cref> nodes.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="SaveOptions.html" title="class in com.aspose.words">SaveOptions</A></B></TD>
+<TD>
+            This is an abstract base class for classes that allow the user to specify additional 
+            options when saving a document into a particular format.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="SaveOutputParameters.html" title="class in com.aspose.words">SaveOutputParameters</A></B></TD>
+<TD>
+            This object is returned to the caller after a document is saved and contains additional information that 
+            has been generated or calculated during the save operation. The caller can use or ignore this object.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="SdtListItem.html" title="class in com.aspose.words">SdtListItem</A></B></TD>
+<TD>
+            This element specifies a single list item within a parent <cref><A HREF="SdtType.html#COMBO_BOX" title="field in class com.aspose.words.SdtType">SdtType.COMBO_BOX</A></cref> or <cref><A HREF="SdtType.html#DROP_DOWN_LIST" title="field in class com.aspose.words.SdtType">SdtType.DROP_DOWN_LIST</A></cref> structured document tag. 
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="SdtListItemCollection.html" title="class in com.aspose.words">SdtListItemCollection</A></B></TD>
+<TD>
+            Provides access to <cref><A HREF="SdtListItem.html" title="class in com.aspose.words">SdtListItem</A></cref> elements of a structured document tag.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="Section.html" title="class in com.aspose.words">Section</A></B></TD>
+<TD>
+             Represents a single section in a document.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="SectionCollection.html" title="class in com.aspose.words">SectionCollection</A></B></TD>
+<TD>
+             A collection of <b>Section</b> objects in the document.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="Shading.html" title="class in com.aspose.words">Shading</A></B></TD>
+<TD>
+            Contains shading attributes for an object.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="Shape.html" title="class in com.aspose.words">Shape</A></B></TD>
+<TD>
+            Represents an object in the drawing layer, such as an AutoShape, textbox, freeform, OLE object, ActiveX control, or picture.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ShapeBase.html" title="class in com.aspose.words">ShapeBase</A></B></TD>
+<TD>
+            Base class for objects in the drawing layer, such as an AutoShape, freeform, OLE object, ActiveX control, or picture.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ShapeRenderer.html" title="class in com.aspose.words">ShapeRenderer</A></B></TD>
+<TD>
+            Provides methods to render an individual <cref><A HREF="Shape.html" title="class in com.aspose.words">Shape</A></cref> or <cref><A HREF="GroupShape.html" title="class in com.aspose.words">GroupShape</A></cref> 
+            to a raster or vector image or to a Graphics object.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="SmartTag.html" title="class in com.aspose.words">SmartTag</A></B></TD>
+<TD>
+             This element specifies the presence of a smart tag around one or more inline structures
+             (runs, images, fields,etc.) within a paragraph.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="SpecialChar.html" title="class in com.aspose.words">SpecialChar</A></B></TD>
+<TD>
+             Base class for special characters in the document.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="Story.html" title="class in com.aspose.words">Story</A></B></TD>
+<TD>
+            Base class for elements that contain block-level nodes <cref><A HREF="Paragraph.html" title="class in com.aspose.words">Paragraph</A></cref> and <cref><A HREF="Table.html" title="class in com.aspose.words">Table</A></cref>.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="Stroke.html" title="class in com.aspose.words">Stroke</A></B></TD>
+<TD>
+            Defines a stroke for a shape.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="StructuredDocumentTag.html" title="class in com.aspose.words">StructuredDocumentTag</A></B></TD>
+<TD>
+            Represents a structured document tag (SDT or content control) in a document.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="Style.html" title="class in com.aspose.words">Style</A></B></TD>
+<TD>
+            Represents a single built-in or user-defined style.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="StyleCollection.html" title="class in com.aspose.words">StyleCollection</A></B></TD>
+<TD>
+            A collection of Style objects that represent both the built-in and user-defined styles in a document.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="SubDocument.html" title="class in com.aspose.words">SubDocument</A></B></TD>
+<TD>
+            Represents a <b>SubDocument</b> - which is a reference to an externally stored document.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="SvgSaveOptions.html" title="class in com.aspose.words">SvgSaveOptions</A></B></TD>
+<TD>
+            Can be used to specify additional options when saving a document into the <cref><A HREF="SaveFormat.html#SVG" title="field in class com.aspose.words.SaveFormat">SaveFormat.SVG</A></cref> format.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="SwfSaveOptions.html" title="class in com.aspose.words">SwfSaveOptions</A></B></TD>
+<TD>
+            Can be used to specify additional options when saving a document into the <cref><A HREF="SaveFormat.html#SWF" title="field in class com.aspose.words.SaveFormat">SaveFormat.SWF</A></cref> format.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="SwfToolTips.html" title="class in com.aspose.words">SwfToolTips</A></B></TD>
+<TD>
+            Allows to specify tooltips displayed in the Aspose.Words SWF Document Viewer.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="SystemFontSource.html" title="class in com.aspose.words">SystemFontSource</A></B></TD>
+<TD>
+            Represents all TrueType fonts installed to the system.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="Table.html" title="class in com.aspose.words">Table</A></B></TD>
+<TD>
+            Represents a table in a Word document.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="TableCollection.html" title="class in com.aspose.words">TableCollection</A></B></TD>
+<TD>
+            Provides typed access to a collection of <cref><A HREF="Table.html" title="class in com.aspose.words">Table</A></cref> nodes.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="TableStyle.html" title="class in com.aspose.words">TableStyle</A></B></TD>
+<TD>
+            Represents a table style.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="TabStop.html" title="class in com.aspose.words">TabStop</A></B></TD>
+<TD>
+             Represents a single custom tab stop. The <b>TabStop</b> object is a member of the
+             <cref><A HREF="TabStopCollection.html" title="class in com.aspose.words">TabStopCollection</A></cref> collection.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="TabStopCollection.html" title="class in com.aspose.words">TabStopCollection</A></B></TD>
+<TD>
+             A collection of <cref><A HREF="TabStop.html" title="class in com.aspose.words">TabStop</A></cref> objects that represent custom tabs for a paragraph or a style.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="TextBox.html" title="class in com.aspose.words">TextBox</A></B></TD>
+<TD>
+            Defines attributes that specify how a text is displayed inside a shape.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="TextColumn.html" title="class in com.aspose.words">TextColumn</A></B></TD>
+<TD>
+            Represents a single text column. <b>TextColumn</b> is a member of the <cref><A HREF="TextColumnCollection.html" title="class in com.aspose.words">TextColumnCollection</A></cref> collection.
+            The <b>TextColumns</b> collection includes all the columns in a section of a document.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="TextColumnCollection.html" title="class in com.aspose.words">TextColumnCollection</A></B></TD>
+<TD>
+            A collection of <cref><A HREF="TextColumn.html" title="class in com.aspose.words">TextColumn</A></cref> objects that represent all the columns of text in a section of a document.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="TextPath.html" title="class in com.aspose.words">TextPath</A></B></TD>
+<TD>
+            Defines the text and formatting of the text path (of a WordArt object).
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ThumbnailGeneratingOptions.html" title="class in com.aspose.words">ThumbnailGeneratingOptions</A></B></TD>
+<TD>
+            Can be used to specify additional options when generating thumbnail for a document.
+            <remarks>
+            User can call method <cref><A HREF="Document.html#updateThumbnail(com.aspose.words.ThumbnailGeneratingOptions)" title="method in class com.aspose.words.Document">Document.updateThumbnail(com.aspose.words.ThumbnailGeneratingOptions)</A></cref> to generate 
+            <cref><A HREF="BuiltInDocumentProperties.html#Thumbnail" title="property in class com.aspose.words.BuiltInDocumentProperties">BuiltInDocumentProperties.Thumbnail</A></cref> for a document.
+            </remarks></TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="TxtSaveOptions.html" title="class in com.aspose.words">TxtSaveOptions</A></B></TD>
+<TD>
+            Can be used to specify additional options when saving a document into the <cref><A HREF="SaveFormat.html#TEXT" title="field in class com.aspose.words.SaveFormat">SaveFormat.TEXT</A></cref> format.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="VariableCollection.html" title="class in com.aspose.words">VariableCollection</A></B></TD>
+<TD>
+            A collection of document variables.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ViewOptions.html" title="class in com.aspose.words">ViewOptions</A></B></TD>
+<TD>
+            Provides various options that control how a document is shown in Microsoft Word.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="WarningInfo.html" title="class in com.aspose.words">WarningInfo</A></B></TD>
+<TD>
+            Contains information about a warning that Aspose.Words issued during document loading or saving.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="WarningInfoCollection.html" title="class in com.aspose.words">WarningInfoCollection</A></B></TD>
+<TD>
+            Represents a typed collection of <cref><A HREF="WarningInfo.html" title="class in com.aspose.words">WarningInfo</A></cref> objects.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="WordML2003SaveOptions.html" title="class in com.aspose.words">WordML2003SaveOptions</A></B></TD>
+<TD>
+            Can be used to specify additional options when saving a document into the <cref><A HREF="SaveFormat.html#WORD_ML" title="field in class com.aspose.words.SaveFormat">SaveFormat.WORD_ML</A></cref> format.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="WriteProtection.html" title="class in com.aspose.words">WriteProtection</A></B></TD>
+<TD>
+            Specifies write protection settings for a document. 
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="XamlFixedSaveOptions.html" title="class in com.aspose.words">XamlFixedSaveOptions</A></B></TD>
+<TD>
+            Can be used to specify additional options when saving a document into the <cref><A HREF="SaveFormat.html#XAML_FIXED" title="field in class com.aspose.words.SaveFormat">SaveFormat.XAML_FIXED</A></cref> format.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="XamlFlowSaveOptions.html" title="class in com.aspose.words">XamlFlowSaveOptions</A></B></TD>
+<TD>
+            Can be used to specify additional options when saving a document into the 
+            <cref><A HREF="SaveFormat.html#XAML_FLOW" title="field in class com.aspose.words.SaveFormat">SaveFormat.XAML_FLOW</A></cref> or <cref><A HREF="SaveFormat.html#XAML_FLOW_PACK" title="field in class com.aspose.words.SaveFormat">SaveFormat.XAML_FLOW_PACK</A></cref> format.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="XpsSaveOptions.html" title="class in com.aspose.words">XpsSaveOptions</A></B></TD>
+<TD>
+            Can be used to specify additional options when saving a document into the <cref><A HREF="SaveFormat.html#XPS" title="field in class com.aspose.words.SaveFormat">SaveFormat.XPS</A></cref> format.
+            </TD>
+</TR></TABLE>
+&nbsp;
+
+<P><TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Interface Summary</B></FONT></TH>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ICssSavingCallback.html" title="interface in com.aspose.words">ICssSavingCallback</A></B></TD>
+<TD>
+            Implement this interface if you want to control how Aspose.Words saves CSS (Cascading Style Sheet) when 
+            saving a document to HTML.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="IDocumentPartSavingCallback.html" title="interface in com.aspose.words">IDocumentPartSavingCallback</A></B></TD>
+<TD>
+            Implement this interface if you want to receive notifications and control how
+            Aspose.Words saves document parts when exporting a document to <cref><A HREF="SaveFormat.html#HTML" title="field in class com.aspose.words.SaveFormat">SaveFormat.HTML</A></cref> 
+            or <cref><A HREF="SaveFormat.html#EPUB" title="field in class com.aspose.words.SaveFormat">SaveFormat.EPUB</A></cref> format.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="IFieldMergingCallback.html" title="interface in com.aspose.words">IFieldMergingCallback</A></B></TD>
+<TD>
+            Implement this interface if you want to control how data is inserted into merge fields during a mail merge operation.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="IFieldUserPromptRespondent.html" title="interface in com.aspose.words">IFieldUserPromptRespondent</A></B></TD>
+<TD>
+            Represents the respondent to user prompts during field update. 
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="IFontSavingCallback.html" title="interface in com.aspose.words">IFontSavingCallback</A></B></TD>
+<TD>
+            Implement this interface if you want to receive notifications and control how
+            Aspose.Words saves fonts when exporting a document to HTML format.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="IImageData.html" title="interface in com.aspose.words">IImageData</A></B></TD>
+<TD>
+            Provides a common interface for manipulating images stored in VML-based and DrawingML-based shapes in a document.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="IImageSavingCallback.html" title="interface in com.aspose.words">IImageSavingCallback</A></B></TD>
+<TD>
+            Implement this interface if you want to control how Aspose.Words saves images when 
+            saving a document to HTML. May be used by other formats.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="IMailMergeDataSource.html" title="interface in com.aspose.words">IMailMergeDataSource</A></B></TD>
+<TD>
+            Implement this interface to allow mail merge from a custom data source, such as a list of objects. Master-detail data is also supported.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="IMailMergeDataSourceRoot.html" title="interface in com.aspose.words">IMailMergeDataSourceRoot</A></B></TD>
+<TD>
+            Implement this interface to allow mail merge from a custom data source with master-detail data.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="INodeChangingCallback.html" title="interface in com.aspose.words">INodeChangingCallback</A></B></TD>
+<TD>
+            Implement this interface if you want to receive notifications when nodes are inserted or removed in the document.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="IReplacingCallback.html" title="interface in com.aspose.words">IReplacingCallback</A></B></TD>
+<TD>
+            Implement this interface if you want to have your own custom method called during a find and replace operation.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="IResourceLoadingCallback.html" title="interface in com.aspose.words">IResourceLoadingCallback</A></B></TD>
+<TD>
+            Implement this interface if you want to control how Aspose.Words loads external resource when 
+            importing a document from HTML or MHTML.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="IResourceSavingCallback.html" title="interface in com.aspose.words">IResourceSavingCallback</A></B></TD>
+<TD>
+            Implement this interface if you want to control how Aspose.Words saves external resources (images, fonts and css) when 
+            saving a document to fixed page HTML or SVG.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="IWarningCallback.html" title="interface in com.aspose.words">IWarningCallback</A></B></TD>
+<TD>
+            Implement this interface if you want to have your own custom method called to 
+            capture loss of fidelity warnings that can occur during document loading or saving.
+            </TD>
+</TR></TABLE>
+&nbsp;
+
+<P><TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Exception Summary</B></FONT></TH>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="FileCorruptedException.html" title="exception in com.aspose.words">FileCorruptedException</A></B></TD>
+<TD>
+            Thrown during document load, when the document appears to be corrupted and impossible to load.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="IncorrectPasswordException.html" title="exception in com.aspose.words">IncorrectPasswordException</A></B></TD>
+<TD>
+            Thrown if a document is encrypted with a password and the password specified when opening the document is incorrect or missing.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="UnsupportedFileFormatException.html" title="exception in com.aspose.words">UnsupportedFileFormatException</A></B></TD>
+<TD>
+            Thrown during document load, when the document format is not recognized or not supported by Aspose.Words.
+            </TD>
+</TR></TABLE>
+&nbsp;
+
+<P><TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constant Summary</B></FONT></TH>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ArrowLength.html" title="constant in com.aspose.words">ArrowLength</A></B></TD>
+<TD>Utility class containing constants. 
+            Length of the arrow at the end of a line.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ArrowType.html" title="constant in com.aspose.words">ArrowType</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the type of an arrow at a line end.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ArrowWidth.html" title="constant in com.aspose.words">ArrowWidth</A></B></TD>
+<TD>Utility class containing constants. 
+            Width of the arrow at the end of a line.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="AutoFitBehavior.html" title="constant in com.aspose.words">AutoFitBehavior</A></B></TD>
+<TD>Utility class containing constants. 
+            Determines how Aspose.Words resizes the table when you invoke the <cref><A HREF="Table.html#autoFit(int)" title="method in class com.aspose.words.Table">Table.autoFit(int)</A></cref> method.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="BorderType.html" title="constant in com.aspose.words">BorderType</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies sides of a border.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="BreakType.html" title="constant in com.aspose.words">BreakType</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies type of a break inside a document.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="BuildingBlockBehavior.html" title="constant in com.aspose.words">BuildingBlockBehavior</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the behavior that shall be applied to the contents of the building block
+            when it is inserted into the main document.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="BuildingBlockGallery.html" title="constant in com.aspose.words">BuildingBlockGallery</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the predefined gallery into which a building block is classified.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="BuildingBlockType.html" title="constant in com.aspose.words">BuildingBlockType</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies a building block type. The type might affect the visibility and behavior of the building block
+            in Microsoft Word.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="CellMerge.html" title="constant in com.aspose.words">CellMerge</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies how a cell in a table is merged with other cells.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="CellVerticalAlignment.html" title="constant in com.aspose.words">CellVerticalAlignment</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies vertical justification of text inside a table cell.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="Compatibility.html" title="constant in com.aspose.words">Compatibility</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies names of compatibility options.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ContentDisposition.html" title="constant in com.aspose.words">ContentDisposition</A></B></TD>
+<TD>Utility class containing constants. 
+            Enumerates different ways of presenting the document at the client browser. 
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ControlChar.html" title="constant in com.aspose.words">ControlChar</A></B></TD>
+<TD>Utility class containing constants. 
+            Control characters often encountered in documents.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="CssStyleSheetType.html" title="constant in com.aspose.words">CssStyleSheetType</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies how CSS (Cascading Style Sheet) styles are exported to HTML.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="DashStyle.html" title="constant in com.aspose.words">DashStyle</A></B></TD>
+<TD>Utility class containing constants. 
+            Dashed line style.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="DigitalSignatureType.html" title="constant in com.aspose.words">DigitalSignatureType</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the type of a digital signature.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="DmlEffectsRenderingMode.html" title="constant in com.aspose.words">DmlEffectsRenderingMode</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies how DrawingML effects are rendered to fixed page formats.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="DmlRenderingMode.html" title="constant in com.aspose.words">DmlRenderingMode</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies how DrawingML shapes are rendered to fixed page formats.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="DocumentSecurity.html" title="constant in com.aspose.words">DocumentSecurity</A></B></TD>
+<TD>Utility class containing constants. 
+            Used as a value for the <cref><A HREF="BuiltInDocumentProperties.html#Security" title="property in class com.aspose.words.BuiltInDocumentProperties">BuiltInDocumentProperties.Security</A></cref> property.
+            Specifies the security level of a document as a numeric value.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="DocumentSplitCriteria.html" title="constant in com.aspose.words">DocumentSplitCriteria</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies how the document is split into parts when saving to <cref><A HREF="SaveFormat.html#HTML" title="field in class com.aspose.words.SaveFormat">SaveFormat.HTML</A></cref> 
+            or <cref><A HREF="SaveFormat.html#EPUB" title="field in class com.aspose.words.SaveFormat">SaveFormat.EPUB</A></cref> format.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="DropCapPosition.html" title="constant in com.aspose.words">DropCapPosition</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the position for a drop cap text.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="EditorType.html" title="constant in com.aspose.words">EditorType</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the set of possible aliases (or editing groups) which can be used as aliases to
+            determine if the current user shall be allowed to edit a single range 
+            defined by an editable range within a document.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="EmbeddedFontFormat.html" title="constant in com.aspose.words">EmbeddedFontFormat</A></B></TD>
+<TD>Utility class containing constants. <p>Specifies format of particular embedded font inside <cref><A HREF="FontInfo.html" title="class in com.aspose.words">FontInfo</A></cref> object.</p><p>When saving a document to a file, only embedded fonts of corresponding format are written down.</p></TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="EmbeddedFontStyle.html" title="constant in com.aspose.words">EmbeddedFontStyle</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the style of an embedded font inside a <cref><A HREF="FontInfo.html" title="class in com.aspose.words">FontInfo</A></cref> object.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="EmfPlusDualRenderingMode.html" title="constant in com.aspose.words">EmfPlusDualRenderingMode</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies how Aspose.Words should render EMF+ Dual metafiles.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="EndCap.html" title="constant in com.aspose.words">EndCap</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies line cap style.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ExportFontFormat.html" title="constant in com.aspose.words">ExportFontFormat</A></B></TD>
+<TD>Utility class containing constants. 
+            Indicates the format that is used to export fonts while rendering to HTML fixed format.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ExportHeadersFootersMode.html" title="constant in com.aspose.words">ExportHeadersFootersMode</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies how headers and footers are exported to HTML, MHTML or EPUB.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ExportListLabels.html" title="constant in com.aspose.words">ExportListLabels</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies how list labels are exported to HTML, MHTML and EPUB.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="FieldType.html" title="constant in com.aspose.words">FieldType</A></B></TD>
+<TD>Utility class containing constants. 
+            Enumeration that identifies all different types of Word fields.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="FieldUpdateCultureSource.html" title="constant in com.aspose.words">FieldUpdateCultureSource</A></B></TD>
+<TD>Utility class containing constants. 
+            Indicates what culture to use during field update.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="FlipOrientation.html" title="constant in com.aspose.words">FlipOrientation</A></B></TD>
+<TD>Utility class containing constants. 
+            Possible values for the orientation of a shape.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="FontFamily.html" title="constant in com.aspose.words">FontFamily</A></B></TD>
+<TD>Utility class containing constants. 
+            Represents the font family.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="FontPitch.html" title="constant in com.aspose.words">FontPitch</A></B></TD>
+<TD>Utility class containing constants. 
+            Represents the font pitch. 
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="FontSourceType.html" title="constant in com.aspose.words">FontSourceType</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the type of a font source.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="FootnoteLocation.html" title="constant in com.aspose.words">FootnoteLocation</A></B></TD>
+<TD>Utility class containing constants. 
+            Defines the footnote or endnote position.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="FootnoteNumberingRule.html" title="constant in com.aspose.words">FootnoteNumberingRule</A></B></TD>
+<TD>Utility class containing constants. 
+            Determines when automatic footnote or endnote numbering restarts.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="FootnoteType.html" title="constant in com.aspose.words">FootnoteType</A></B></TD>
+<TD>Utility class containing constants. 
+             Specifies whether this is a footnote or an endnote.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="HeaderFooterType.html" title="constant in com.aspose.words">HeaderFooterType</A></B></TD>
+<TD>Utility class containing constants. 
+            Identifies the type of header or footer found in a Word file.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="HeightRule.html" title="constant in com.aspose.words">HeightRule</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the rule for determining the height of an object.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="HorizontalAlignment.html" title="constant in com.aspose.words">HorizontalAlignment</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies horizontal alignment of a floating shape, text frame or floating table.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="HtmlElementSizeOutputMode.html" title="constant in com.aspose.words">HtmlElementSizeOutputMode</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies how Aspose.Words exports element widths and heights to HTML, MHTML and EPUB.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ImageBinarizationMethod.html" title="constant in com.aspose.words">ImageBinarizationMethod</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the method used to binarize image.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ImageColorMode.html" title="constant in com.aspose.words">ImageColorMode</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the color mode for the generated images of document pages.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ImagePixelFormat.html" title="constant in com.aspose.words">ImagePixelFormat</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the pixel format for the generated images of document pages.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ImageType.html" title="constant in com.aspose.words">ImageType</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the type (format) of an image in a Microsoft Word document.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ImportFormatMode.html" title="constant in com.aspose.words">ImportFormatMode</A></B></TD>
+<TD>Utility class containing constants. 
+             Specifies how formatting is merged when importing content from another document.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="JoinStyle.html" title="constant in com.aspose.words">JoinStyle</A></B></TD>
+<TD>Utility class containing constants. 
+            Line join style.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="LayoutEntityType.html" title="constant in com.aspose.words">LayoutEntityType</A></B></TD>
+<TD>Utility class containing constants. 
+            Types of the layout entities.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="LayoutFlow.html" title="constant in com.aspose.words">LayoutFlow</A></B></TD>
+<TD>Utility class containing constants. 
+            Determines the flow of the text layout in a textbox. 
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="LineNumberRestartMode.html" title="constant in com.aspose.words">LineNumberRestartMode</A></B></TD>
+<TD>Utility class containing constants. 
+            Determines when automatic line numbering restarts.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="LineSpacingRule.html" title="constant in com.aspose.words">LineSpacingRule</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies line spacing values for a paragraph.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="LineStyle.html" title="constant in com.aspose.words">LineStyle</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies line style of a <cref><A HREF="Border.html" title="class in com.aspose.words">Border</A></cref>.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ListLevelAlignment.html" title="constant in com.aspose.words">ListLevelAlignment</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies alignment for the list number or bullet.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ListTemplate.html" title="constant in com.aspose.words">ListTemplate</A></B></TD>
+<TD>Utility class containing constants. 
+             Specifies one of the predefined list formats available in Microsoft Word.
+             </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ListTrailingCharacter.html" title="constant in com.aspose.words">ListTrailingCharacter</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the character that separates the list label from the text of the paragraph.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="LoadFormat.html" title="constant in com.aspose.words">LoadFormat</A></B></TD>
+<TD>Utility class containing constants. 
+            Indicates the format of the document that is to be loaded.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="MailMergeCheckErrors.html" title="constant in com.aspose.words">MailMergeCheckErrors</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies how Microsoft Word will report errors detected during mail merge.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="MailMergeCleanupOptions.html" title="constant in com.aspose.words">MailMergeCleanupOptions</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies options that determine what items are removed during mail merge.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="MailMergeDataType.html" title="constant in com.aspose.words">MailMergeDataType</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the type of an external mail merge data source.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="MailMergeDestination.html" title="constant in com.aspose.words">MailMergeDestination</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the possible results which may be generated when a mail merge is carried out on a document.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="MailMergeMainDocumentType.html" title="constant in com.aspose.words">MailMergeMainDocumentType</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the possible types for a mail merge source document.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="MailMergeRtlCleanupMode.html" title="constant in com.aspose.words">MailMergeRtlCleanupMode</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies how to handle Right-To-Left attributes of mail merge result text runs.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="MarkupLevel.html" title="constant in com.aspose.words">MarkupLevel</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the level in the document tree where a particular <cref><A HREF="StructuredDocumentTag.html" title="class in com.aspose.words">StructuredDocumentTag</A></cref> or <cref><A HREF="CustomXmlMarkup.html" title="class in com.aspose.words">CustomXmlMarkup</A></cref> can occur.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="MergeFieldImageDimensionUnit.html" title="constant in com.aspose.words">MergeFieldImageDimensionUnit</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies an unit of an image dimension (i.e. the width or the height) used across a mail merge process.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="MultiplePagesType.html" title="constant in com.aspose.words">MultiplePagesType</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies how document is printed out. 
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="NodeChangingAction.html" title="constant in com.aspose.words">NodeChangingAction</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the type of node change.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="NodeType.html" title="constant in com.aspose.words">NodeType</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the type of a Word document node.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="NumberStyle.html" title="constant in com.aspose.words">NumberStyle</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the number style for a list, footnotes and endnotes, page numbers.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="NumeralFormat.html" title="constant in com.aspose.words">NumeralFormat</A></B></TD>
+<TD>Utility class containing constants. 
+            Indicates the symbol set that is used to represent numbers
+            while rendering to fixed page formats.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="OdsoDataSourceType.html" title="constant in com.aspose.words">OdsoDataSourceType</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the type of the external data source to be connected to as part of the ODSO connection information.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="OdsoFieldMappingType.html" title="constant in com.aspose.words">OdsoFieldMappingType</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the possible types used to indicate if a given mail merge field has been mapped to a column in the given external data source.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="OoxmlCompliance.html" title="constant in com.aspose.words">OoxmlCompliance</A></B></TD>
+<TD>Utility class containing constants. 
+            Allows to specify which OOXML specification will be used when saving in the DOCX format.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="Orientation.html" title="constant in com.aspose.words">Orientation</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies page orientation.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="OutlineLevel.html" title="constant in com.aspose.words">OutlineLevel</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the outline level of a paragraph in the document.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="PageBorderAppliesTo.html" title="constant in com.aspose.words">PageBorderAppliesTo</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies which pages the page border is printed on.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="PageBorderDistanceFrom.html" title="constant in com.aspose.words">PageBorderDistanceFrom</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the positioning of the page border relative to the page margin.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="PageVerticalAlignment.html" title="constant in com.aspose.words">PageVerticalAlignment</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies vertical justification of text on each page.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="PaperSize.html" title="constant in com.aspose.words">PaperSize</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies paper size.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ParagraphAlignment.html" title="constant in com.aspose.words">ParagraphAlignment</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies text alignment in a paragraph.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="PdfCompliance.html" title="constant in com.aspose.words">PdfCompliance</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the PDF standards compliance level. 
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="PdfDigitalSignatureHashAlgorithm.html" title="constant in com.aspose.words">PdfDigitalSignatureHashAlgorithm</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies a digital hash algorithm used by a digital signature.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="PdfEncryptionAlgorithm.html" title="constant in com.aspose.words">PdfEncryptionAlgorithm</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the encryption algorithm to use for encrypting a PDF document.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="PdfFontEmbeddingMode.html" title="constant in com.aspose.words">PdfFontEmbeddingMode</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies how Aspose.Words should embed fonts.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="PdfImageCompression.html" title="constant in com.aspose.words">PdfImageCompression</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the type of compression applied to images in the PDF file.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="PdfPageMode.html" title="constant in com.aspose.words">PdfPageMode</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies how the PDF document should be displayed when opened in the PDF reader.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="PdfPermissions.html" title="constant in com.aspose.words">PdfPermissions</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the operations that are allowed to a user on an encrypted PDF document.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="PdfTextCompression.html" title="constant in com.aspose.words">PdfTextCompression</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies a type of compression applied to all content in the PDF file except images.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="PdfZoomBehavior.html" title="constant in com.aspose.words">PdfZoomBehavior</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the type of zoom applied to a PDF document when it is opened in a PDF viewer.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="PreferredWidthType.html" title="constant in com.aspose.words">PreferredWidthType</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the unit of measurement for the preferred width of a table or cell.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="PropertyType.html" title="constant in com.aspose.words">PropertyType</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies data type of a document property.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ProtectionType.html" title="constant in com.aspose.words">ProtectionType</A></B></TD>
+<TD>Utility class containing constants. 
+            Protection type for a document.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="RelativeHorizontalPosition.html" title="constant in com.aspose.words">RelativeHorizontalPosition</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies to what the horizontal position of a shape or text frame is relative.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="RelativeVerticalPosition.html" title="constant in com.aspose.words">RelativeVerticalPosition</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies to what the vertical position of a shape or text frame is relative.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ReplaceAction.html" title="constant in com.aspose.words">ReplaceAction</A></B></TD>
+<TD>Utility class containing constants. 
+            Allows the user to specify what happens to the current match during a replace operation.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ResourceLoadingAction.html" title="constant in com.aspose.words">ResourceLoadingAction</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the mode of resource loading.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ResourceType.html" title="constant in com.aspose.words">ResourceType</A></B></TD>
+<TD>Utility class containing constants. 
+            Type of loaded resource.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="RevisionType.html" title="constant in com.aspose.words">RevisionType</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the type of change being tracked in <cref><A HREF="Revision.html" title="class in com.aspose.words">Revision</A></cref>.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="RowAlignment.html" title="constant in com.aspose.words">RowAlignment</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies alignment for a table row.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="SaveFormat.html" title="constant in com.aspose.words">SaveFormat</A></B></TD>
+<TD>Utility class containing constants. 
+            Indicates the format in which the document is saved.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="SdtCalendarType.html" title="constant in com.aspose.words">SdtCalendarType</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the possible types of calendars which can be used to specify <cref><A HREF="StructuredDocumentTag.html#CalendarType" title="property in class com.aspose.words.StructuredDocumentTag">StructuredDocumentTag.CalendarType</A></cref>
+            in an Office Open XML document.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="SdtDateStorageFormat.html" title="constant in com.aspose.words">SdtDateStorageFormat</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies how the date for a date SDT is stored/retrieved when the SDT is bound to an XML node in the document's data store.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="SdtType.html" title="constant in com.aspose.words">SdtType</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the type of a structured document tag (SDT) node.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="SectionStart.html" title="constant in com.aspose.words">SectionStart</A></B></TD>
+<TD>Utility class containing constants. 
+            The type of break at the beginning of the section.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ShapeLineStyle.html" title="constant in com.aspose.words">ShapeLineStyle</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the compound line style of a <cref><A HREF="Shape.html" title="class in com.aspose.words">Shape</A></cref>.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ShapeType.html" title="constant in com.aspose.words">ShapeType</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the type of shape in a Microsoft Word document.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="StoryType.html" title="constant in com.aspose.words">StoryType</A></B></TD>
+<TD>Utility class containing constants. 
+            Text of a Word document is stored in stories. <b>StoryType</b> identifies a story.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="StyleIdentifier.html" title="constant in com.aspose.words">StyleIdentifier</A></B></TD>
+<TD>Utility class containing constants. 
+            Locale independent style identifier.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="StyleType.html" title="constant in com.aspose.words">StyleType</A></B></TD>
+<TD>Utility class containing constants. 
+            Represents type of the style.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="SvgTextOutputMode.html" title="constant in com.aspose.words">SvgTextOutputMode</A></B></TD>
+<TD>Utility class containing constants. </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="SwfLeftPaneControlFlags.html" title="constant in com.aspose.words">SwfLeftPaneControlFlags</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies what buttons are displayed on the left panel of SWF viewer.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="SwfTopPaneControlFlags.html" title="constant in com.aspose.words">SwfTopPaneControlFlags</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies what buttons are displayed on the top panel of SWF viewer.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="SwfViewerControlIdentifier.html" title="constant in com.aspose.words">SwfViewerControlIdentifier</A></B></TD>
+<TD>Utility class containing constants. 
+            Identifies each control in the Aspose.Words SWF Document Viewer.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="TabAlignment.html" title="constant in com.aspose.words">TabAlignment</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the alignment/type of a tab stop.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="TabLeader.html" title="constant in com.aspose.words">TabLeader</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the type of the leader line displayed under the tab character.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="TableAlignment.html" title="constant in com.aspose.words">TableAlignment</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies alignment for an inline table.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="TableStyleOptions.html" title="constant in com.aspose.words">TableStyleOptions</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies how table style is applied to a table.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="TextBoxWrapMode.html" title="constant in com.aspose.words">TextBoxWrapMode</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies how text wraps inside a shape.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="TextEffect.html" title="constant in com.aspose.words">TextEffect</A></B></TD>
+<TD>Utility class containing constants. 
+            Animation effect for text runs.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="TextFormFieldType.html" title="constant in com.aspose.words">TextFormFieldType</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the type of a text form field.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="TextOrientation.html" title="constant in com.aspose.words">TextOrientation</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies orientation of text in a table cell or a text frame.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="TextPathAlignment.html" title="constant in com.aspose.words">TextPathAlignment</A></B></TD>
+<TD>Utility class containing constants. 
+            WordArt alignment.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="TextureIndex.html" title="constant in com.aspose.words">TextureIndex</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies shading texture.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="TextWrapping.html" title="constant in com.aspose.words">TextWrapping</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies how text is wrapped around the table.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="TiffCompression.html" title="constant in com.aspose.words">TiffCompression</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies what type of compression to apply when saving page images into a TIFF file.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="Underline.html" title="constant in com.aspose.words">Underline</A></B></TD>
+<TD>Utility class containing constants. 
+            Indicates type of the underline applied to a font.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="VerticalAlignment.html" title="constant in com.aspose.words">VerticalAlignment</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies vertical alignment of a floating shape, text frame or a floating table.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ViewType.html" title="constant in com.aspose.words">ViewType</A></B></TD>
+<TD>Utility class containing constants. 
+            Possible values for the view mode in Microsoft Word.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="VisitorAction.html" title="constant in com.aspose.words">VisitorAction</A></B></TD>
+<TD>Utility class containing constants. 
+            Allows the visitor to control the enumeration of nodes.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="WarningSource.html" title="constant in com.aspose.words">WarningSource</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the module that produces a warning during document loading or saving.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="WarningType.html" title="constant in com.aspose.words">WarningType</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies the type of a warning that is issued by Aspose.Words during document loading or saving.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="WrapSide.html" title="constant in com.aspose.words">WrapSide</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies what side(s) of the shape or picture the text wraps around.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="WrapType.html" title="constant in com.aspose.words">WrapType</A></B></TD>
+<TD>Utility class containing constants. 
+            Specifies how text is wrapped around a shape or picture.
+            </TD>
+</TR><TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="ZoomType.html" title="constant in com.aspose.words">ZoomType</A></B></TD>
+<TD>Utility class containing constants. 
+            Possible values for how large or small the document appears on the screen in Microsoft Word.
+            </TD>
+</TR></TABLE>
+&nbsp;
+
+<P><B>See Also:</B>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A href="http://www.aspose.com/Products/Aspose.Words/Api/index.html" TARGET="_blank">Aspose.Words Documentation</A> - the home page for the Aspose.Words Product Documentation.<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A href="http://www.aspose.com/Community/forums/ShowForum.aspx?ForumID=75" TARGET="_blank">Aspose.Words Support Forum</A> - our preferred method of support.<P>
+<div class="footer"><hr><p><a href='http://www.aspose.com/Wiki/default.aspx/Aspose.Corporate/ContactAspose.html'>We guarantee a prompt response to any inquiry!</a></p><p>&copy; 2003-2007 Aspose Pty Ltd. All rights reserved.</p></div></BODY></HTML>
