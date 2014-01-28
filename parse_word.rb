@@ -18,6 +18,7 @@ java_import 'com.aspose.words.Section'
 java_import 'com.aspose.words.Body'
 java_import 'com.aspose.words.Paragraph'
 java_import 'com.aspose.words.Run'
+java_import 'com.aspose.words.WrapType'
 java_import 'org.apache.xmlbeans.XmlObject'
 java_import 'org.apache.poi.xwpf.usermodel.XWPFDocument'
 java_import 'java.io.InputStream'
@@ -46,13 +47,19 @@ post '/generate' do
   doc = Document.new
   builder = DocumentBuilder.new(doc)
   params["questions"].each do |q|
-    builder.writeln(q["content"])
-    organize_items(q["items"]).each { |e| builder.writeln(e) }
+
     qr = RQRCode::QRCode.new(q["link"], :size => 4, :level => :l )
     png = qr.to_img
     temp_img_name = "public/#{SecureRandom.uuid}.png"
-    png.resize(90, 90).save(temp_img_name)
-    builder.insertImage(temp_img_name)
+    png.resize(70, 70).save(temp_img_name)
+    shape = builder.insertImage(temp_img_name)
+    shape.setWrapType(WrapType::SQUARE)
+    shape.setLeft(370)
+
+    builder.writeln(q["content"])
+    organize_items(q["items"]).each { |e| builder.writeln(e) }
+
+    builder.writeln("")
     builder.writeln("")
   end
   filename = "downloads/documents/#{params["name"]}_#{SecureRandom.uuid}.docx"
