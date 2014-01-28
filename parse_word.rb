@@ -90,7 +90,7 @@ def organize_items(items)
   max_length = items.map { |e| e.length } .max
   if max_length < settings.item_thresh[0]
     # should in one line
-    occ_len - settings.line_length/4
+    occ_len = settings.line_length/4
     line = "#{items[0]}#{" " * (occ_len-items[0].length)}"
     line += "#{items[1]}#{" " * (occ_len-items[1].length)}"
     line += "#{items[2]}#{" " * (occ_len-items[2].length)}"
