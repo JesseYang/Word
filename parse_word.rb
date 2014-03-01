@@ -18,6 +18,8 @@ java_import 'com.aspose.words.Section'
 java_import 'com.aspose.words.Body'
 java_import 'com.aspose.words.Paragraph'
 java_import 'com.aspose.words.Run'
+java_import 'com.aspose.words.OfficeMath'
+java_import 'com.aspose.words.Shape'
 java_import 'com.aspose.words.WrapType'
 java_import 'org.apache.xmlbeans.XmlObject'
 java_import 'org.apache.poi.xwpf.usermodel.XWPFDocument'
@@ -31,12 +33,27 @@ configure do
   set :line_length, 80
 end
 
+# http://www.aspose.com/docs/display/wordsjava/ImageType
+suffix_ary = ["", "", "emf", "wmf", "pict", "jpeg", "png", "bmp"]
+
 get '/extract' do
   filename = "#{settings.root}/../EngLib/public/uploads/documents/#{params[:filename]}"
   doc = Document.new(filename)
   content = []
   doc.sections.get(0).body.paragraphs.each do |para|
-    content << (para.runs.map { |e| e.text } .join)
+    para_text = ""
+    para.getChildNodes.each do |e|
+      if e.class == Shape
+        suffix = suffix_ary[e.getImageData().imageType]
+        next if suffix == ""
+        img_file_name = "#{SecureRandom.uuid}.#{suffix}"
+        para_text += "$#{img_file_name}$"
+        e.getImageData().save("#{settings.root}/../EngLib/public/uploads/documents/images/#{img_file_name}")
+      elsif e.class == Run
+        para_text += e.text
+      end
+    end
+    content << para_text
   end
   content_type :json
     { content: content }.to_json
@@ -56,8 +73,8 @@ post '/generate' do
     shape.setWrapType(WrapType::SQUARE)
     shape.setLeft(370)
 
-    builder.writeln(q["content"])
-    organize_items(q["items"]).each { |e| builder.writeln(e) }
+    write_paragraph(builder, q["content"])
+    organize_items(q["items"]).each { |e| write_paragraph(builder, e) }
 
     builder.writeln("")
     builder.writeln("")
@@ -75,8 +92,8 @@ post '/export' do
   builder = DocumentBuilder.new(doc)
   params["groups"].each do |questions|
     questions.each do |q|
-      builder.writeln(q["content"])
-      organize_items(q["items"]).each { |e| builder.writeln(e) }
+      write_paragraph(builder, q["content"])
+      organize_items(q["items"]).each { |e| write_paragraph(builder, e) }
       builder.writeln("")
     end
     builder.writeln("-" * 60)
@@ -114,6 +131,20 @@ def organize_items(items)
     # each item occupies one line
    return items
   end
+end
+
+def write_paragraph(builder, content)
+  content.split('$').each do |f|
+    if f.match(/[a-z 0-9]{8}-[a-z 0-9]{4}-[a-z 0-9]{4}-[a-z 0-9]{4}-[a-z 0-9]{12}/)
+      # equation
+      shape = builder.insertImage(("#{settings.root}/../EngLib/public/uploads/documents/images/#{f}"))
+      shape.setWrapType(WrapType::INLINE)
+    else
+      # text
+      builder.write(f)
+    end
+  end
+  builder.writeln("")
 end
 
 def remove_ad(temp_file_name, original_name)
