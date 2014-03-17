@@ -89,11 +89,16 @@ post '/generate' do
       organize_items(q["items"]).each { |e| write_paragraph(builder, e) }
     end
     
-    if q["type"] == "choice"
-      2.times { builder.writeln("") }
+    if (q["answer_content"] || []).length > 0 || !q["answer"].nil?
+        write_answer(builder, q)
+        2.times { builder.writeln("") }
     else
-      10.times {builder.writeln("") }
-    else
+      if q["type"] == "choice"
+        2.times { builder.writeln("") }
+      else
+        10.times {builder.writeln("") }
+      end
+    end
   end
   filename = "downloads/documents/#{params["name"]}_#{SecureRandom.uuid}.docx"
   fullpath = "#{settings.root}/../EngLib/public/#{filename}"
@@ -125,16 +130,7 @@ post '/export' do
       end
       # write answers
       if (q["answer_content"] || []).length > 0 || !q["answer"].nil?
-        builder.writeln("答案:#{d2c(q["answer"])}")
-        q["answer_content"].each do |node|
-          if node.class == String
-            # normal line
-            write_paragraph(builder, node)
-          elsif node.class == Hash && node["type"] == "table"
-            # table
-            write_table(builder, node)
-          end
-        end
+        write_answer(builder, q)
       end
       builder.writeln("")
     end
@@ -181,6 +177,18 @@ def parse_paragraph(para)
   para_text
 end
 
+def judge_type(e)
+  if e.class == Run
+    "text"
+  elsif (e.class == Shape || e.class == DrawingML) && e.getImageData().isInline == false
+    "figure"
+  elsif e.class == Shape && settings.suffix_ary[e.getImageData().imageType] == "wmf" && e.getImageData().isInline
+    "equation"
+  else
+    "figure"
+  end
+end
+
 def organize_items(items)
   # plus prefix for each item
   items = items.each_with_index.map do |e, i|
@@ -205,6 +213,19 @@ def organize_items(items)
   else
     # each item occupies one line
    return items
+  end
+end
+
+def write_answer(builder, question)
+  builder.writeln("答案:#{d2c(question["answer"])}")
+  question["answer_content"].each do |node|
+    if node.class == String
+      # normal line
+      write_paragraph(builder, node)
+    elsif node.class == Hash && node["type"] == "table"
+      # table
+      write_table(builder, node)
+    end
   end
 end
 
@@ -250,7 +271,7 @@ def split_doc(filename)
   elementNumber = doc.getBodyElements.length
   all_index = (0..elementNumber-1).to_a
   # every 50 elements are split as one doc
-  size = 6
+  size = 50
   file_num = (elementNumber * 1.0 / size).ceil
   (0..file_num - 1).to_a.each do |file_index|
     remove_pre_index_ary = all_index.select do |e|
