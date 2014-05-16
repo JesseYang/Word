@@ -18,10 +18,12 @@ java_import 'com.aspose.words.DocumentBuilder'
 java_import 'com.aspose.words.Section'
 java_import 'com.aspose.words.Body'
 java_import 'com.aspose.words.Paragraph'
+java_import 'com.aspose.words.SmartTag'
 java_import 'com.aspose.words.Run'
 java_import 'com.aspose.words.OfficeMath'
 java_import 'com.aspose.words.Shape'
 java_import 'com.aspose.words.Table'
+java_import 'com.aspose.words.DrawingML'
 java_import 'com.aspose.words.WrapType'
 java_import 'com.aspose.words.VerticalAlignment'
 java_import 'org.apache.xmlbeans.XmlObject'
@@ -164,28 +166,39 @@ end
 def parse_paragraph(para)
   para_text = ""
   para.getChildNodes.each do |e|
-    if e.class == Shape
+    case judge_type(e)
+    when "text"
+      para_text += e.text
+    when "unknown"
+      para_text += e.text
+    when "equation"
       suffix = settings.suffix_ary[e.getImageData().imageType]
       next if suffix == ""
       img_file_name = "#{SecureRandom.uuid}.#{suffix}"
       para_text += "$#{img_file_name}$"
       e.getImageData().save("#{settings.root}/../EngLib/public/uploads/documents/images/#{img_file_name}")
-    elsif e.class == Run
-      para_text += e.text
+    when "figure"
+      suffix = settings.suffix_ary[e.getImageData().imageType]
+      next if suffix == ""
+      img_file_name = "#{SecureRandom.uuid}.#{suffix}"
+      para_text += "$#{img_file_name}$"
+      e.getImageData().save("#{settings.root}/../EngLib/public/uploads/documents/images/#{img_file_name}")
     end
   end
   para_text
 end
 
 def judge_type(e)
-  if e.class == Run
+  if e.class == Run || e.class == SmartTag
     "text"
-  elsif (e.class == Shape || e.class == DrawingML) && e.getImageData().isInline == false
+  elsif e.class == DrawingML
     "figure"
-  elsif e.class == Shape && settings.suffix_ary[e.getImageData().imageType] == "wmf" && e.getImageData().isInline
+  elsif e.class == Shape && e.isInline == false
+    "figure"
+  elsif e.class == Shape && settings.suffix_ary[e.getImageData().imageType] == "wmf" && e.isInline
     "equation"
   else
-    "figure"
+    "unknown"
   end
 end
 
