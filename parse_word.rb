@@ -50,8 +50,8 @@ get '/extract' do
     doc.sections.get(0).body.getChildNodes.each_with_index do |node, index|
       next if f.include?("true") && index == doc.sections.get(0).body.getChildNodes.count - 1
       if node.class == Paragraph
-        string = parse_paragraph(node)
-        content << string if !string.start_with?("Evaluation Only.")
+        string = parse_paragraph(node).select { |e| !e.start_with?("Evaluation Only.") }
+        content += string
       elsif node.class == Table
         content << parse_table(node)
       elsif node.class == Shape
@@ -61,6 +61,43 @@ get '/extract' do
   end
   content_type :json
     { content: content }.to_json
+end
+
+post '/export_note' do
+  params = JSON.parse(request.body.read)
+  doc = Document.new("template.docx")
+  builder = DocumentBuilder.new(doc)
+  builder.moveToDocumentEnd()
+  params["questions"].each do |q|
+    q["content"].each do |node|
+      if node.class == String
+        # normal line
+        write_paragraph(builder, node)
+      elsif node.class == Hash && node["type"] == "table"
+        # table
+        write_table(builder, node)
+      end
+    end
+    if q["type"] == "choice"
+      organize_items(q["items"]).each { |e| write_paragraph(builder, e) }
+    end
+    
+    if (q["answer_content"] || []).length > 0 || !q["answer"].nil?
+        write_answer(builder, q)
+        2.times { builder.writeln("") }
+    else
+      if q["type"] == "choice"
+        2.times { builder.writeln("") }
+      else
+        10.times {builder.writeln("") }
+      end
+    end
+  end
+  filename = "downloads/documents/#{params["name"]}_#{SecureRandom.uuid}.docx"
+  fullpath = "#{settings.root}/../EngLib/public/#{filename}"
+  doc.save(fullpath)
+  content_type :json
+    { filename: remove_ad(fullpath, params["name"]) }.to_json
 end
 
 post '/generate' do
@@ -154,7 +191,7 @@ def parse_table(table)
     row.getChildNodes.each do |cell|
       parsed_cell = []
       cell.each do |para|
-        parsed_cell << parse_paragraph(para)
+        parsed_cell += parse_paragraph(para)
       end
       parsed_row << parsed_cell
     end
@@ -164,38 +201,42 @@ def parse_table(table)
 end
 
 def parse_paragraph(para)
-  para_text = ""
+  para_text = []
+  cur_text = ""
   para.getChildNodes.each do |e|
     case judge_type(e)
     when "text"
-      para_text += e.text
+      cur_text += e.text
     when "unknown"
-      para_text += e.text
+      cur_text += e.text
     when "equation"
       suffix = settings.suffix_ary[e.getImageData().imageType]
       next if suffix == ""
       img_file_name = "#{SecureRandom.uuid}.#{suffix}"
-      para_text += "$#{img_file_name}$"
+      cur_text += "$equation*#{img_file_name}$"
       e.getImageData().save("#{settings.root}/../EngLib/public/uploads/documents/images/#{img_file_name}")
     when "figure"
+      para_text << cur_text if cur_text != ""
+      cur_text = ""
       suffix = settings.suffix_ary[e.getImageData().imageType]
       next if suffix == ""
       img_file_name = "#{SecureRandom.uuid}.#{suffix}"
-      para_text += "$#{img_file_name}$"
+      para_text << "$figure*#{img_file_name}$"
       e.getImageData().save("#{settings.root}/../EngLib/public/uploads/documents/images/#{img_file_name}")
     end
   end
+  para_text << cur_text if cur_text != ""
   para_text
 end
 
 def judge_type(e)
   if e.class == Run || e.class == SmartTag
     "text"
-  elsif e.class == DrawingML
+  elsif e.class == Shape && settings.suffix_ary[e.getImageData().imageType] == "wmf"
+    "equation"
+  elsif (e.class == DrawingML || e.class == Shape) && e.isInline == false
     "figure"
-  elsif e.class == Shape && e.isInline == false
-    "figure"
-  elsif e.class == Shape && settings.suffix_ary[e.getImageData().imageType] == "wmf" && e.isInline
+  elsif (e.class == DrawingML || e.class == Shape) && e.isInline
     "equation"
   else
     "unknown"
