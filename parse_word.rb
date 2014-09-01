@@ -226,6 +226,7 @@ def parse_paragraph(para)
     end
   end
   para_text << cur_text if cur_text != ""
+  para_text << "" if para_text == []
   para_text
 end
 
