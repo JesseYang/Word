@@ -124,6 +124,10 @@ post '/generate' do
         write_table(builder, node)
       end
     end
+    q["figures"].each do |f|
+      write_figure(builder, f)
+    end
+    write_paragraph(builder, "")
     if q["type"] == "choice"
       organize_items(q["items"]).each { |e| write_paragraph(builder, e) }
     end
@@ -300,11 +304,22 @@ def write_table(builder, table)
   builder.endTable()
 end
 
+def write_figure(builder, figure)
+  image_info = figure[1..-2].split("*")
+  filename = image_info[0]
+  width = image_info[1].to_f
+  height = image_info[2].to_f
+  shape = builder.insertImage(("#{settings.root}/../EngLib/public/uploads/documents/images/#{filename}"))
+  shape.setWidth(width)
+  shape.setHeight(height)
+end
+
 def write_paragraph(builder, content, new_line = true)
   content.split('$').each do |f|
     if f.match(/[a-z 0-9]{8}-[a-z 0-9]{4}-[a-z 0-9]{4}-[a-z 0-9]{4}-[a-z 0-9]{12}/)
       # equation
-      shape = builder.insertImage(("#{settings.root}/../EngLib/public/uploads/documents/images/#{f}"))
+      filename = f.split("*")[0]
+      shape = builder.insertImage(("#{settings.root}/../EngLib/public/uploads/documents/images/#{filename}"))
       shape.setWrapType(WrapType::INLINE)
       shape.setVerticalAlignment(VerticalAlignment::CENTER)
     else
