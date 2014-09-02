@@ -204,7 +204,8 @@ def parse_paragraph(para)
   para_text = []
   cur_text = ""
   para.getChildNodes.each do |e|
-    case judge_type(e)
+    type_info = judge_type(e)
+    case type_info[0]
     when "text"
       cur_text += e.text
     when "unknown"
@@ -213,7 +214,7 @@ def parse_paragraph(para)
       suffix = settings.suffix_ary[e.getImageData().imageType]
       next if suffix == ""
       img_file_name = "#{SecureRandom.uuid}.#{suffix}"
-      cur_text += "$equation*#{img_file_name}$"
+      cur_text += "$equation*#{img_file_name}*#{type_info[1].to_s}*#{type_info[2].to_s}$"
       e.getImageData().save("#{settings.root}/../EngLib/public/uploads/documents/images/#{img_file_name}")
     when "figure"
       para_text << cur_text if cur_text != ""
@@ -221,7 +222,7 @@ def parse_paragraph(para)
       suffix = settings.suffix_ary[e.getImageData().imageType]
       next if suffix == ""
       img_file_name = "#{SecureRandom.uuid}.#{suffix}"
-      para_text << "$figure*#{img_file_name}$"
+      para_text << "$figure*#{img_file_name}*#{type_info[1].to_s}*#{type_info[2].to_s}$"
       e.getImageData().save("#{settings.root}/../EngLib/public/uploads/documents/images/#{img_file_name}")
     end
   end
@@ -232,15 +233,15 @@ end
 
 def judge_type(e)
   if e.class == Run || e.class == SmartTag
-    "text"
+    ["text"]
   elsif e.class == Shape && settings.suffix_ary[e.getImageData().imageType] == "wmf"
-    "equation"
+    ["equation", e.getWidth, e.getHeight]
   elsif (e.class == DrawingML || e.class == Shape) && e.isInline == false
-    "figure"
+    ["figure", e.getWidth, e.getHeight]
   elsif (e.class == DrawingML || e.class == Shape) && e.isInline
-    "equation"
+    ["equation", e.getWidth, e.getHeight]
   else
-    "unknown"
+    ["unknown"]
   end
 end
 
