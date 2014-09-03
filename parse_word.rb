@@ -306,9 +306,9 @@ end
 
 def write_figure(builder, figure)
   image_info = figure[1..-2].split("*")
-  filename = image_info[0]
-  width = image_info[1].to_f
-  height = image_info[2].to_f
+  filename = image_info[1]
+  width = image_info[2].to_f
+  height = image_info[3].to_f
   shape = builder.insertImage(("#{settings.root}/../EngLib/public/uploads/documents/images/#{filename}"))
   shape.setWidth(width)
   shape.setHeight(height)
@@ -318,7 +318,7 @@ def write_paragraph(builder, content, new_line = true)
   content.split('$').each do |f|
     if f.match(/[a-z 0-9]{8}-[a-z 0-9]{4}-[a-z 0-9]{4}-[a-z 0-9]{4}-[a-z 0-9]{12}/)
       # equation
-      filename = f.split("*")[0]
+      filename = f.split("*")[1]
       shape = builder.insertImage(("#{settings.root}/../EngLib/public/uploads/documents/images/#{filename}"))
       shape.setWrapType(WrapType::INLINE)
       shape.setVerticalAlignment(VerticalAlignment::CENTER)
